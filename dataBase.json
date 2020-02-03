@@ -1,0 +1,19 @@
+{
+  "musculationJS": [
+    {
+      "articleName": "Build squad",
+      "learned": true,
+      "id": 10
+    },
+    {
+      "articleName": "Build Chest",
+      "learned": true,
+      "id": 11
+    },
+    {
+      "articleName": "Build Back",
+      "learned": false,
+      "id": 12
+    }
+  ]
+}
