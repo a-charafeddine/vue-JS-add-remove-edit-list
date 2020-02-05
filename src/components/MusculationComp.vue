@@ -13,34 +13,40 @@
             </li>
         </ul>
         <form class="mt-3">
-            <div class="form-group">
-                <input 
-                    v-model="articleNameModel" 
-                    type="text" 
-                    class="form-control" 
-                    placeholder="Name of the articles">
-                <input 
-                    v-model="learndeCheck" 
-                    type="checkbox" 
-                    name="Learned" 
-                    id="learned">
+            <div class="row">
+                <div class="form-group col-10">
+                    <input 
+                        v-model="articleNameModel" 
+                        type="text" 
+                        class="form-control" 
+                        placeholder="Name of the articles">
+                </div>
+                <div class="form-group col-2 d-flex justify-content-between align-items-center">
+                    <span>Click if Learned</span>
+                    <input 
+                        v-model="learndeCheck" 
+                        type="checkbox" 
+                        name="Learned" 
+                        id="learned">
+                </div>
             </div>
-
-            <!--Button de modification du nouveau Articles--> 
-            <button 
-                v-if="thisArt" 
-                v-on:click="updateArticle"  
-                class="btn btn-block btn-warning ">
-                    Update Article
-            </button>
-            
-            <!--Button d'ajout du nouveau Articles-->
-            <button 
-                v-else 
-                v-on:click="addArticle" 
-                class="btn btn-block btn-success">
-                    Add Article
-            </button>
+            <div class="button-action">
+                <!--Button de modification du nouveau Articles--> 
+                <button 
+                    v-if="thisArt" 
+                    v-on:click="updateArticle"  
+                    class="btn btn-block btn-warning ">
+                        Update Article
+                </button>
+                
+                <!--Button d'ajout du nouveau Articles-->
+                <button 
+                    v-else 
+                    v-on:click="addArticle" 
+                    class="btn btn-block btn-success">
+                        Add Article
+                </button>
+            </div>
         </form>
     </div>
 </template>
