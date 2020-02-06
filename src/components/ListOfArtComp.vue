@@ -45,8 +45,8 @@ export default {
     }
     .is-completed:after{
         content: "L";
-        color: red;
-        border: 1px solid red;
+        color: green;
+        border: 1px solid green;
         position: absolute;
         top: 50%;
         right: 15px;
